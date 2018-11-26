@@ -191,7 +191,9 @@ class ScrapeScielo:
         bd_afiliacoes.to_csv("scielo_afiliacoes.csv", index=False)
 
         print('Removing junk data...')
-        os.remove(['edicoes.csv', 'artigos.csv', 'articles_content.csv'])
+        os.remove('edicoes.csv')
+        os.remove('artigos.csv')
+        os.remove('articles_content.csv')
 
         print('Done!!!')
 
